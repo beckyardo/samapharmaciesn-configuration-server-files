@@ -1,0 +1,39 @@
+server:
+  servletPath: /*
+  port: 8180
+  
+spring:
+  application:
+    name: boutique-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/samapharmaciesn-gestion-boutiques
+    username: postgres
+    password: Bienferm@r
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: false
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+        defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+
+logger:
+  version: 1
+  application:
+    id: gestion-boutique
+        
