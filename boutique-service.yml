@@ -1,6 +1,6 @@
 server:
   servletPath: /*
-  port: 8580
+  port: 8180
   
 spring:
   application:
