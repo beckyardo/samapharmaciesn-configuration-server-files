@@ -36,4 +36,7 @@ logger:
   version: 1
   application:
     id: gestion-boutique
+    
+boutique:
+  urlswagger: http://localhost:8080/swagger-ui.html
         
