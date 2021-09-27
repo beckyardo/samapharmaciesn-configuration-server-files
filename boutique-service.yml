@@ -17,5 +17,5 @@ logger:
     id: gestion-boutique
     
 boutique:
-  urlswagger: http://localhost:8080/swagger-ui.html
+  urlswagger: http://localhost:8180/swagger-ui.html
         
